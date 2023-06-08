@@ -30,6 +30,25 @@ The test screen will load and display the first sentence of one of the texts, ra
 
 ![test-screen.png](https://i.ibb.co/zFh4bN2/test-screen.png)
 
+### Checking for accuracy
+
 Once the user starts typing, the application will start processing the user's input and comparing it to the text to be transcribed. If the user's input matches that text, the user receives a visual feedback in the form of the correct text turning green. The user can also always keep track of how much time they have left and how many words (regardless of being correct or incorrect) they have currently typed.
 
 ![test-running.png](https://i.ibb.co/x2S9qQ4/test-running.png)
+
+### Results
+
+Finally, after the timer runs out or after the user presses the "stop" button, the results screen is displayed, where the user can find out the number of words they have typed within that minute, the percentage of those words that have matches the correct spelling and their net speed, which is the number of words typed times the accuracy percentage.
+
+![results-screen.png](https://i.ibb.co/1JVMcL5/results-screen.png)
+
+## Requirements
+
+This app requires the following:
+
++ Python 3
++ Tkinter
+
+```
+pip install -r requirements.txt
+```

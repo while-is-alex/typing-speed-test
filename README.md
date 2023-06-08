@@ -20,7 +20,7 @@ venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
-5. Finally, to get started with the test, run the `main.py` file. The app will launch and diplsay the home screen.
+5. Finally, to get started with the test, run the `main.py` file. The app will launch and display the home screen.
 
 ![home-screen.png](https://i.ibb.co/MNqpMJd/home-screen.png)
 

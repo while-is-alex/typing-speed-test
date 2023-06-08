@@ -48,7 +48,3 @@ This app requires the following:
 
 + Python 3
 + Tkinter
-
-```
-pip install -r requirements.txt
-```

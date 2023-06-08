@@ -140,7 +140,6 @@ class Test:
         # and catches an exception when the user hasn't tried transcribing any word
         if user_input != 0:
             self.total_words += len(text_sentences[self.current_sentence].split()[:self.current_index]) + 1
-
         # Stops the timer if it was still running
         if self.timer_running:
             window.after_cancel(self.timer)

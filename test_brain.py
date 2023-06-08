@@ -130,16 +130,18 @@ class Test:
             self.stop_timer(window)
             self.calculate_results(window)
 
-    def stop_timer(self, window, user_input=1):
+    def stop_timer(self, window):
         """Stops the timer and updates the total of words to the point
         where the user stopped the test."""
         text_sentences = self.text.split('. ')
+        user_input = window.user_input.get()
         user_input = len(user_input.split())
         # Adds the total of words the user attempted to transcribe before pressing the stop button
         # and catches an exception when the user hasn't tried transcribing any word
         if user_input != 0:
             self.total_words += len(text_sentences[self.current_sentence].split()[:self.current_index]) + 1
 
+        # Stops the timer if it was still running
         if self.timer_running:
             window.after_cancel(self.timer)
             self.timer_running = False

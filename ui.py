@@ -179,7 +179,7 @@ class Window(Tk):
             width=80,
             borderless=1,
             command=lambda: [
-                self.test_brain.stop_timer(self, user_input=self.user_input.get()),
+                self.test_brain.stop_timer(self),
                 self.test_brain.calculate_results(self)
             ]
         )
